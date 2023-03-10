@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    position: relative;
+    width:300px;
+    height:45px;
+    border:3px solid #000;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:300px;
+    height:45px;
+    background: #000;
+    z-index: -1;
+    transform: translate(1px,2px);
+}
+button:hover{
+    letter-spacing:1px;
+}
+
+.one{
+    background: #FF9F29;
+}
+.two{
+    background: #47B5FF;
+}
+.three{
+    background: #FF7396;
+}
